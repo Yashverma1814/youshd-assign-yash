@@ -119,7 +119,7 @@ a{
   padding: 1rem;
   padding-left: 7rem;
   padding-right: 7rem;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
   border-radius: 12px;
   border: none;
   color: grey;
@@ -136,7 +136,35 @@ a{
 }
 .backButton{
   padding: 0.5rem;
+  margin-left: 0.75rem;
   border-radius: 10px;
   background-color: white;
   border:1px solid grey;
+}
+
+
+
+
+/* <======Otp Page=======> */
+
+
+
+.singleInput{
+  padding: 0.75rem;
+  width: 1rem;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+.otpInputMain{
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  width: 21%;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.backContinueOtp{
+  display: flex;
+  margin-top: 50vh;
+  flex-direction: row;
 }
