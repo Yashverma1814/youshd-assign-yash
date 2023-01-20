@@ -87,3 +87,56 @@ a{
 .footerLink2{
   margin-left: 6rem;
 }
+
+
+
+/* <=====Number Page======> */
+
+
+
+.numPageHeading{
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+}
+.headingMain{
+  padding-top: 7vh;
+  margin-left: 1rem;
+  padding-bottom: 5vh;
+}
+.numInput{
+  width: 18%;
+  border: 1px solid gainsboro !important;
+  padding: 0.7rem !important;
+  border-radius: 10px;
+}
+.backContinue{
+  display: flex;
+  margin-top: 60vh;
+  flex-direction: row;
+}
+.numButton{
+  padding: 1rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin-left: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  color: grey;
+  background-color: gainsboro;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: .5s;
+}
+.numButton:hover{
+  transition: .5s;
+  color: white;
+  background-color: black;
+}
+.backButton{
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: white;
+  border:1px solid grey;
+}
