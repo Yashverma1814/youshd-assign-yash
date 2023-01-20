@@ -168,3 +168,66 @@ a{
   margin-top: 50vh;
   flex-direction: row;
 }
+
+
+
+/* <======social media page ========> */
+
+
+
+.insta-icon{
+    background: url(https://app-staging.youshd.com/static/media/instagram%20special.ea0349366f4e3e613be6.svg);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+}
+.socialMain{
+  margin-bottom: 1rem;
+  width: 21%;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+.socialHead{
+  margin-top: 2rem;
+  margin-bottom: 48vh;
+}
+.social-name{
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+.tiktok-icon{
+    background: url(https://app-staging.youshd.com/static/media/tik%20tok%20special.367695f3836dbae2517d.svg);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+}
+.skipButton{
+  padding: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background-color: white;
+  border: 1px solid black;
+}
+.continueButton{
+  padding: 1rem;
+  padding-left: 3.3rem;
+  padding-right: 3.3rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+.skip-continue{
+  display: flex;
+  flex-direction: row;
+}
