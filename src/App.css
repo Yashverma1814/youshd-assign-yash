@@ -190,6 +190,7 @@ a{
   border-radius: 10px;
   background-color: white;
   border: 1px solid gainsboro;
+
 }
 .socialHead{
   margin-top: 2rem;
@@ -230,4 +231,128 @@ a{
 .skip-continue{
   display: flex;
   flex-direction: row;
+}
+
+
+
+/* <====== dashboard page ========> */
+
+
+
+.dashMain{
+  width: 26%;
+  background-repeat: no-repeat;
+  margin-left: 40%;
+  border-radius: 16px;
+  border-bottom: 1px solid #e3caff;
+  margin-bottom:3rem;
+}
+.logoDash{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+.menuDash{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.logo-menu{
+  display: flex;
+  flex-direction: row;
+}
+.navMain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.walletDash{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.navDiv{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.socialMainDash{
+  margin-bottom: 1rem;
+  width: 95%;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+.socialHeadDash{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+.walletCard{
+  background: linear-gradient( 106.67deg, #c0edff -7.16%, #e3caff 13.58%, #f4edff 51.96%, #ffedff 91.55% );
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+.totalEarn{
+  font-size: 1rem;
+  color: grey;
+}
+.totalAmt{
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+.walletCardSub{
+  background: rgba(108, 67, 155, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.walletSubAmt{
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+.walletSubEarn{
+  font-size: 0.8rem;
+}
+.myProdHead{
+  background: linear-gradient( 106.67deg, #c0edff -7.16%, #e3caff 13.58%, #f4edff 51.96%, #ffedff 91.55% );
+  padding: 1rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius:16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.productHeading{
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+.prodSubHeading{
+  font-size: 1.2rem;
+  font-weight: 700;
+
+}
+.prodContent{
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.prodArrowIconDiv{
+    background-image: url(https://app-staging.youshd.com/static/media/lock.f97dfdca31b89618c418.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.giftImg{
+  margin-top: 1rem;
+  text-align: center;
+}
+.dashSubMain{
+  border-radius: 16px;
+  border-bottom: 1px solid #e3caff;
 }
