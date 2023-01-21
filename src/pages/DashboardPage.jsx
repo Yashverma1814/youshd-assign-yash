@@ -1,15 +1,21 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { Navigate } from 'react-router-dom'
 import { BackDrop } from '../components/dashboard/BackDrop'
 import { Navbar } from '../components/dashboard/Navbar'
 import { SideBar } from '../components/dashboard/SideBar'
 import { WalletCard } from '../components/dashboard/WalletCard'
+import { LoginContext } from '../context/LoginContext'
 
 export const DashboardPage = () => {
-
+    const {token} = useContext(LoginContext);
     const [sidebar,setSidebar] = useState(false);
 
     const toggleSidebar = () => {
         setSidebar((prevState)=>!prevState)
+    }
+
+    if(token!='yash'){
+        return <Navigate to={'/enter-otp'} />
     }
 
 

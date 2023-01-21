@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { NumButton } from '../components/number/NumButton';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
+import { LoginContext } from '../context/LoginContext';
 
 
 export const OtpPage = () => {
@@ -12,6 +13,9 @@ export const OtpPage = () => {
     const [five,setFive] = useState('')
     const [six,setSix] = useState('')
     const navigate = useNavigate();
+    const {token,setToken} = useContext(LoginContext);
+
+
     const checkOtp = () =>{
         var flag = true;
         const arr = [one,two,three,four,five,six];
@@ -22,6 +26,7 @@ export const OtpPage = () => {
             }
         }
         if(flag){
+            setToken('yash');
             navigate('/dashboard');
         }
         else{
@@ -29,7 +34,9 @@ export const OtpPage = () => {
         }
     }
 
-
+    if(token==='yash'){
+        return <Navigate to={'/dashboard'} />
+    }
   return (
     <div>
         <div className='loginBackground'>

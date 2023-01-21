@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { LoginContext } from '../../context/LoginContext'
 
 export const SideBar = ({sidebarclass}) => {
+
+
+  const {isLogin} = useContext(LoginContext);
+
   return (
     <div className={sidebarclass?'sidebar sidebar--open':'sidebar'}>
         <div style={{marginTop:'2rem', marginBottom:'1rem'}}>
@@ -12,7 +17,7 @@ export const SideBar = ({sidebarclass}) => {
         <li>Profile</li>
         <li>Settings</li>
         <Link to='/enter-number' style={{textDecoration:'none'}}>
-            <li>SignOut</li>
+            <li onClick={isLogin}>SignOut</li>
         </Link>
     </div>
   )
