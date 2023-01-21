@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { AuthorizeSocial } from './pages/AuthorizeSocial';
 import { DashboardPage } from './pages/DashboardPage';
@@ -8,11 +9,14 @@ import { OtpPage } from './pages/OtpPage';
 function App() {
   return (
     <div className="App">
-      {/* <LoginPage /> */}
-      {/* <NumberPage /> */}
-      {/* <OtpPage /> */}
-      {/* <AuthorizeSocial /> */}
-      <DashboardPage />      
+      {/* <======Routing=======> */}
+      <Routes>
+        <Route path='/' element={<LoginPage />} />
+        <Route path='/enter-number' element={<NumberPage />} />
+        <Route path='/enter-otp' element={<OtpPage />} />
+        <Route path='/authorize-social' element={<AuthorizeSocial />} />
+        <Route path='/dashboard' element={<DashboardPage />} />
+      </Routes>      
     </div>
   );
 }

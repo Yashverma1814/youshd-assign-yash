@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const AuthorizeSocial = () => {
   return (
@@ -21,10 +22,12 @@ export const AuthorizeSocial = () => {
                     </div>
                     </a>
                 </div>
-                <div className='skip-continue'>
-                        <div><button className='skipButton'>Skip for now</button></div>
-                        <div><button className='continueButton' >Continue</button></div>
-                </div>
+                <Link to='/dashboard'>
+                    <div className='skip-continue'>
+                            <div><button className='skipButton'>Skip for now</button></div>
+                            <div><button className='continueButton'disabled>Continue</button></div>
+                    </div>
+                </Link>
             </div>
         </div>
     </div>

@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { BackDrop } from '../components/dashboard/BackDrop'
 import { Navbar } from '../components/dashboard/Navbar'
+import { SideBar } from '../components/dashboard/SideBar'
 import { WalletCard } from '../components/dashboard/WalletCard'
 
 export const DashboardPage = () => {
+
+    const [sidebar,setSidebar] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebar((prevState)=>!prevState)
+    }
+
+
+
   return (
     <div>
         <div className='dashMain'>
             <div className='dashSubMain'>
-                <div className='navDiv'><Navbar /></div>
+                <div className='navDiv'><Navbar openSidebar={toggleSidebar}/></div>
+                <BackDrop sidebarclass={sidebar} closeSidebar={toggleSidebar}/>
+                <SideBar sidebarclass={sidebar}/>
                 <hr />
                 <div className='socialHeadDash'>
                         <a href="https://www.instagram.com/" style={{textDecoration:'none'}}>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import MuiPhoneNumber from 'material-ui-phone-number';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { NumButton } from '../components/number/NumButton';
+import { Link } from 'react-router-dom';
 
 export const NumberPage = () => {
 
@@ -18,7 +19,9 @@ export const NumberPage = () => {
             <div className='backContinueMain'>
                 <div className='backContinue'>
                     <div><button className='backButton'><ArrowBackIcon /></button></div>
+                    <Link to='/enter-otp'>
                     <div><NumButton val='Continue'/></div>
+                    </Link>
                 </div>
             </div>
         </div>
