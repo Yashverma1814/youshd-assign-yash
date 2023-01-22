@@ -1,7 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { Link, Navigate } from 'react-router-dom'
+import { LoginContext } from '../context/LoginContext';
 
 export const AuthorizeSocial = () => {
+
+    const {token} = useContext(LoginContext);
+
+    if(token!='yash'){
+        return <Navigate to={'/enter-otp'} />
+    }
+
   return (
     <div>
         <div className='loginBackground'>

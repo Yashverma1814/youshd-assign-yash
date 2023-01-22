@@ -27,7 +27,7 @@ export const OtpPage = () => {
         }
         if(flag){
             setToken('yash');
-            navigate('/dashboard');
+            navigate('/authorize-social');
         }
         else{
             navigate('/enter-otp')
